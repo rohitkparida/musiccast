@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Chromecast MP3 Player by M4nuski</title>
-		<link id="theme" rel="stylesheet" type="text/css" href="chromecast_player14_light.css">
-	</head> 
-	<body>
-		<div id="Player">
-			<div id="PlayerHeader">
-				<h1>Chromecast MP3 Player</h1>
-				<div id="credits">v1.4 - M4nuski - 2014-04-25</div>
-			</div>
-			<p id="songTitle">[No Track]</p>
-			<div id="PlayerControls">
-				<audio id="mediaPlayer" controls src="" type="audio/mpeg">Your browser does not support the audio element.</audio><br>
-				<p>
-					<button id="PrevButton" type="button">Previous Track</button>		
-					<button id="NextButton" type="button">Next Track</button><br>
-				</p>				
-				<button id="AddButton" type="button">Add Tracks [...]</button>						
-				<button id="RemoveButton" type="button">Remove Track</button><br>			
-				<button id="ShuffleButton" type="button">Shuffle List</button>		
-				<button id="UpButton" type="button">Move Track Up</button><br>			
-				<button id="ClearButton" type="button">Clear List</button>			
-				<button id="DownButton" type="button">Move Track Down</button><br>	
-				<input id="AddDialog" type="file" multiple hidden />	
-			</div>
+
+<head>
+	<title>Music - Music Player</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<meta name="theme-color" content="#212121">
+	<meta name="application-name" content="Notes">
+	<meta name="description" content="Video Player App">
+	<meta name="keywords" content="note,offline,web,app">
+	<meta name="author" content="Rohit Parida">
+	<link rel="manifest" href="https://rohitparida27.github.io/video/manifest.json">
+	<link href="https://fonts.googleapis.com/css?lang=en&amp;family=Product+Sans">
+	<link id="theme" rel="stylesheet" type="text/css" href="chromecast_player14_light.css">
+</head>
+
+<body>
+	<div id="Player">
+		<div id="PlayerHeader">
+			<span>Music Player</span>
 		</div>
-		<div id="Playlist">[Playlist Empty]</div>
-		<script src="chromecast_player14.js"></script>
-	</body>
+		<p id="songTitle">[No Track]</p>
+		<div id="PlayerControls">
+			<audio id="mediaPlayer" controls src="" type="audio/mpeg">Your browser does not support the audio element.</audio><br>
+			<p>
+				<button id="PrevButton" type="button">Previous Track</button>
+				<button id="NextButton" type="button">Next Track</button><br>
+			</p>
+			<button id="AddButton" type="button">Add Tracks [...]</button>
+			<button id="RemoveButton" type="button">Remove Track</button><br>
+			<button id="ShuffleButton" type="button">Shuffle List</button>
+			<button id="UpButton" type="button">Move Track Up</button><br>
+			<button id="ClearButton" type="button">Clear List</button>
+			<button id="DownButton" type="button">Move Track Down</button><br>
+			<input id="AddDialog" type="file" multiple hidden />
+		</div>
+	</div>
+	<div id="Playlist">[Playlist Empty]</div>
+	<script src="chromecast_player14.js"></script>
+</body>
+
 </html>

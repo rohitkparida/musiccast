@@ -1,75 +1,103 @@
-body {
-	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	color:#FFFFFF;
-	background:#181818;	
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Product Sans', monospace, sans-serif;
+    cursor: default;
+    user-select: none;
+    outline: none;
+    color: #FFF;
 }
+
+html, body {
+    position: relative;
+    font-family: "Product Sans";
+    color: #FFFFFF;
+    background: #181818;
+}
+
 button {
-	background:black;
-	color:LightGray;
-	border-color:#202020;
-	font-size:16px;
-	width:48%;
-	height:40px;
+    background: black;
+    color: LightGray;
+    border-color: #202020;
+    font-size: 16px;
+    width: 48%;
+    height: 40px;
 }
+
 span {
-	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
-	-moz-user-select: none; /* mozilla browsers */
-	-khtml-user-select: none; /* webkit (konqueror) browsers */
-	-ms-user-select: none; /* IE10+ */
+    -webkit-user-select: none;
+    /* webkit (safari, chrome) browsers */
+    -moz-user-select: none;
+    /* mozilla browsers */
+    -khtml-user-select: none;
+    /* webkit (konqueror) browsers */
+    -ms-user-select: none;
+    /* IE10+ */
 }
+
 #PlayerHeader {
-	color:orange;
-	margin:2%;
-	display:block;
+    color: orange;
+    margin: 2%;
+    display: block;
 }
-	h1 {
-		font-size:24px;
-		margin:0px;
-	}
-	#credits {
-		font-size:12px;
-		font-weight:bold;
-		margin:0px;
-	}	
+
+span {
+    font-size: 24px;
+    margin: 0px;
+}
+
+#credits {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0px;
+}
+
 #songTitle {
-	padding:20px;
-	font-weight:bold;
+    padding: 20px;
+    font-weight: bold;
 }
+
 #Player {
-	position:fixed;	
-	width:50%;
-	height:100%;
-	left:0%;
-	top:0%;
-	text-align:center;
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    left: 0%;
+    top: 0%;
+    text-align: center;
+    display: inline-block;
 }
-#PlayerControls{
-	display:block;
+
+audio {
+    width: 100vw;
 }
+
+#PlayerControls {
+    display: block;
+}
+
 #Playlist {
-	position:fixed;
-	display:block;
-	width:50%;
-	height:100%;
-	left:50%;
-	top:0%;
-	overflow-y:scroll;
-	border-left-style:double;
-	border-left-color:#404040;
-	padding:0.5%;
-	color:#C0C0C0;
+    position: relative;
+    display: inline-block;
+    width: 100vw;
+    height: 50vh;
+    overflow-y: scroll;
+    color: #C0C0C0;
 }
+
 .song {
-	background:#181818;
+    background: #181818;
 }
+
 .currentAndSelectedSong {
-	color:#FFFFFF;
-	background:#505050;
+    color: #FFFFFF;
+    background: #505050;
 }
+
 .currentSong {
-	color:#FFFFFF;
-	background:#181818;
+    color: #FFFFFF;
+    background: #181818;
 }
-.selectedSong{
-	background:#505050;
+
+.selectedSong {
+    background: #505050;
 }
